@@ -40,5 +40,3 @@ while 1 :
 
         #if out != '':
         print (">>" + str(out))
-        
-    print ("opening port again")
