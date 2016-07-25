@@ -4,6 +4,6 @@ All material contained in this project is property of Visiongate, INC. and shoul
 
 This project contains code related to control of an H101ANN Prior Scientific motorized stage and an MU500 Amscope Camera. 
 
-To access the ToupCam API, go to the SDK folder -> docs -> en 
+To access the ToupCam API, go to the SDK folder -> docs -> en (obsolete) 
 
-http://www.ab-soft.com/activegige.php
+New CAMERA prosilica GigE SDK Page : http://www.ab-soft.com/activegige.php
