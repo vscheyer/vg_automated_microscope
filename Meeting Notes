@@ -22,9 +22,52 @@ Program Structure/Procedure
     - move to specified image location
     -trigger camera 
     -save image to XXX folder with unique name (eg. wafer_count_MM-dd-YYYY_(X,Y)_unique_id.bmp) 
-  - access images and iterate though the folder, cumulatively adding the wafers counted
+  - access images and iterate though the folder, return a cumulative count of the wafers to the user
     - initial image processing has been developed, see file(s) named:  
       -Wafer.py 
       -image_splitting_for _wafer_counting.py #this is only necessary if the mosaic image is provided as a single stitched image 
       -wafer_image_analysis_for_count.py 
+  -delete images 
+  
+User interface Requirments 
+  -Live image display (for focus adj) 
+  -STOP button 
+  -start/stop positions button (for defining image capture bounding box) 
+  -homing button 
+  
+Hardware 
+  Camera: Prosilica GigE (by Allied Vision) 
+  Microscope: 
+    Current: CX41 (incompatible with automated stage) 
+    Suggested replacement: BX41(obsolete) or BX43 
+    Stage: H101ANNN (by Prior Scientific) 
+    Objective Magnification: 20X 
+    
+    _________                     __________________                     ________________
+    |UI comp|________USB__________|Stage Controller|_____________________|H101ANNN stage| 
+    |_______|       RS232         |________________|                     |______________| 
+        |
+        |
+        |
+        |                         ________
+        |__________Ethernet_______|Camera|
+        |                         |______|
+        |
+        X
+        |                    _________                           ________________
+        |_______USB__________|Arduino|_________Analog____________|Objective Piezo| 
+                             |_______|                           |_______________|  
+
+
+Current Concerns: 
+  -Camera SDK (for python) 
+  -Picture resolution, pixel shape, necessary cropping 
+  -Mapping step distances to camera pixels 
+    - Might need a micorscope slide with grid features to help with pixel mapping / calibration 
+      -Likely available from throlabs, newport, edmundoptics, etc. 
+  -Compatible microscope components and obsolete components 
+    - BX41 is available all over ebay and far cheaper then buying a new BX43 but is technically obsolete, which may be okay, can't imagine changeing the microscope body will change software design if we want to upgrade in the future. 
+    - Olympus sales rep said there might be some problem if we are going to sell this as a product to consumers because we might be "competeting". Need to create a novel system somehow. Our own software may be enough. 
+  -stage movement, need to know when a move command has been sent and went it has been completed. 
+    
     
