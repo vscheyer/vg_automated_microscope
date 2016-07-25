@@ -1,0 +1,30 @@
+Meeting Notes 
+
+7/25/16 
+Attendees: Nate, Christy, Vienna 
+
+Discussed project requirements, software structure, mechanical design and next steps 
+
+Desired/Predicted procedure: 
+  - Turn on computer, controller, camera 
+  - Home the prior stage 
+  - Load wafer slide (slide preparation is a seperate procedure, refer to Nate) 
+  - Adjust Focus
+    - Drive stage to wafer object, bring to sharp focus. 
+  - Define search area 
+    - treat as bounding box, drive to top left starting point, record position (UI button) then drive to bottom right and record position. 
+  - run program. 
+  
+Program Structure/Procedure
+  -Create mosaic of sample (no need to stitch initially, unless the counts are significantly off) 
+  -Start in upper left corner of bounding box 
+  -progress in serpentine motion: 
+    - move to specified image location
+    -trigger camera 
+    -save image to XXX folder with unique name (eg. wafer_count_MM-dd-YYYY_(X,Y)_unique_id.bmp) 
+  - access images and iterate though the folder, cumulatively adding the wafers counted
+    - initial image processing has been developed, see file(s) named:  
+      -Wafer.py 
+      -image_splitting_for _wafer_counting.py #this is only necessary if the mosaic image is provided as a single stitched image 
+      -wafer_image_analysis_for_count.py 
+    
