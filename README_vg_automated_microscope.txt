@@ -83,7 +83,7 @@ Refer to page 58 of the manual for error codes.
 ADDITIONAL INFORMATION:
 • Use the knob on the right side of the microscope under the stage to adjust 
 the amount of light. If the camera images turn out completely white this may be 
-because there is too might light.
+because there is too might light. If images show up all black add more light.
 
 • You can download and use the ToupView software to view a live feed from the 
 camera so you can manipulate across the slide to the "end" and "starting" positions 
