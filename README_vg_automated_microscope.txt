@@ -24,6 +24,9 @@ Download Python 3.5 and save it to that same location
 From the command line, start up python 3.5 and run priorStagePattern.py. The images will be saved 
 to a folder called "Images" in the same location that you saved the above files.
 
+If you would like to see the camera's livestream, run camera_vg_take2_showVid.exe which will show 
+a video from the camera in a pop-up window. Press any key to exit out of the viewing window. 
+
 If you need to edit the executable (camera_vg_take2.exe), download the Visual-Studio-2015 folder from 
 github and run "camera_vg_take2_newsln.sln" in Visual Studio 
 (located on GitHub in vg_automated_microscope/Visual-Studio-2015/camera_vg_take2_newsln/)
