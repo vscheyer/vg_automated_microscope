@@ -36,7 +36,8 @@ If you need to edit the executable (camera_vg_take2.exe), download the Visual-St
 github and run "camera_vg_take2_newsln.sln" in Visual Studio 
 (located on GitHub in vg_automated_microscope/Visual-Studio-2015/camera_vg_take2_newsln/)
 	Edit camera_vg_take2.exe to change the image file type, change the location 
-	that the images are saved to, or change camera settings.
+	that the images are saved to, change camera settings, or change the resolution of the images. To change
+	resolution, edit the numerical values for CAP_PROP_FRAME_WIDTH and CAP_PROP_FRAME_HEIGHT.
 =================================================================
 STAGE COMMANDS:
 Run the "basic_stage_control" program (python) to send commands directly to the stage. 
