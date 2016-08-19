@@ -28,6 +28,8 @@ If you would like to see the camera's livestream, run camera_vg_take2_showVid.ex
 a video from the camera in a pop-up window. Press any key to exit out of the viewing window. 
 You can also use ToupView software to view a live video from the camera.
 
+You can change the set starting and ending points of the pattern in priorStagePattern.py.
+
 If you need to edit the executable (camera_vg_take2.exe), download the Visual-Studio-2015 folder from 
 github and run "camera_vg_take2_newsln.sln" in Visual Studio 
 (located on GitHub in vg_automated_microscope/Visual-Studio-2015/camera_vg_take2_newsln/)
