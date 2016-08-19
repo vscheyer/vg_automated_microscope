@@ -53,7 +53,7 @@ For example, G 20 20 could be written as:
 • H --> disables joystick
 • PX --> reports current x position
 • PY --> reports current y position
-• X --> Reports the current step sizes for x and y in user units (see "Step Size" below about use units)
+• X --> Reports the current step sizes for x and y in user units (see "Step Size" below about user units)
 • B y --> moves back y number of steps (y is a number)
 • F y --> moves forward y steps 
 • R x --> moves to the right x number of steps (x is a number)
