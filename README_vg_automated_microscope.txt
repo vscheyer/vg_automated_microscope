@@ -93,10 +93,6 @@ ADDITIONAL INFORMATION:
 the amount of light. If the camera images turn out completely white this may be 
 because there is too might light. If images show up all black add more light.
 
-• You can download and use the ToupView software to view a live feed from the 
-camera so you can manipulate across the slide to the "end" and "starting" positions 
-of the pattern (see the priorStagePattern.py code comments).
-
 • Note that when the priorStagePattern.py code runs, the joystick is disabled while 
 the pattern is running to prevent the user from accidently interfering with image 
 data collection. The joystick gets enabled again at the end of the program, but if you 
