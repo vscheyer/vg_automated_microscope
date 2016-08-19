@@ -3,13 +3,13 @@
 
 
 #include <iostream> //standard includes
-#include <time.h>
+//#include <time.h>
 #include <string.h>
-#include <vector>
+//#include <vector>
 #include <stdio.h>
-#include <fstream>
-#include <sstream>
-#include <istream>
+//#include <fstream>
+//#include <sstream>
+//#include <istream>
 #include <stdlib.h>
 
 #include "opencv/cv.h" //these are all included from OpenCV
@@ -35,7 +35,7 @@ int main(int argc, char *argv[]) {
 			return -1;
 
 	Mat frame; //initialize frame as a Mat
-	cap.set(CAP_PROP_FPS, 35); //set frames per second
+	cap.set(CAP_PROP_FPS, 30); //set frames per second
 	cap.set(CAP_PROP_FRAME_WIDTH, 2592); //essentially setting resolution
 	cap.set(CAP_PROP_FRAME_HEIGHT, 1944);
 	
@@ -44,8 +44,8 @@ int main(int argc, char *argv[]) {
 	cap >> frame; //put image from cap into frame = change from VideoCapture to Mat (must be Mat to save image)
 
 	ostringstream fn; //ostringsteam can operate on strings
-	fn << "Images/img" << input << ".png"; //put the image number (input) from amscopeCam.py into filename
-	                                       //the location "Images/" might have to be modified
+	fn << "Images/img" << input << ".bmp"; //put the image number (input) from priorStagePattern.py into filename
+	                                       //the location "Images/" can be modified
 
 	imwrite(fn.str(), frame); //write each image (frame) to a new file
 }

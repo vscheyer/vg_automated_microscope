@@ -24,9 +24,17 @@ Download Python 3.5 and save it to that same location
 From the command line, start up python 3.5 and run priorStagePattern.py. The images will be saved 
 to a folder called "Images" in the same location that you saved the above files.
 
+If you would like to see the camera's livestream, run camera_vg_take2_showVid.exe which will show 
+a video from the camera in a pop-up window. Press any key to exit out of the viewing window. 
+You can also use ToupView software to view a live video from the camera.
+
+You can change the set starting and ending points of the pattern in priorStagePattern.py.
+
 If you need to edit the executable (camera_vg_take2.exe), download the Visual-Studio-2015 folder from 
 github and run "camera_vg_take2_newsln.sln" in Visual Studio 
 (located on GitHub in vg_automated_microscope/Visual-Studio-2015/camera_vg_take2_newsln/)
+	Edit camera_vg_take2.exe to change the image file type, change the location 
+	that the images are saved to, or change camera settings.
 =================================================================
 STAGE COMMANDS:
 Run the "basic_stage_control" program (python) to send commands directly to the stage. 
@@ -84,10 +92,6 @@ ADDITIONAL INFORMATION:
 • Use the knob on the right side of the microscope under the stage to adjust 
 the amount of light. If the camera images turn out completely white this may be 
 because there is too might light. If images show up all black add more light.
-
-• You can download and use the ToupView software to view a live feed from the 
-camera so you can manipulate across the slide to the "end" and "starting" positions 
-of the pattern (see the priorStagePattern.py code comments).
 
 • Note that when the priorStagePattern.py code runs, the joystick is disabled while 
 the pattern is running to prevent the user from accidently interfering with image 
