@@ -26,7 +26,9 @@ to a folder called "Images" in the same location that you saved the above files.
 
 If you would like to see the camera's livestream, run camera_vg_take2_showVid.exe which will show 
 a video from the camera in a pop-up window. Press any key to exit out of the viewing window. 
-You can also use ToupView software to view a live video from the camera.
+You can also use ToupView software to view a live video from the camera. However, it is best to close 
+these viewing windows before you run priorStagePattern.py to capture images since the camera connection may 
+get overloaded if too many programs are running.
 
 You can change the set starting and ending points of the pattern in priorStagePattern.py.
 
