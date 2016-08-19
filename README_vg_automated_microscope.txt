@@ -31,6 +31,8 @@ You can also use ToupView software to view a live video from the camera.
 If you need to edit the executable (camera_vg_take2.exe), download the Visual-Studio-2015 folder from 
 github and run "camera_vg_take2_newsln.sln" in Visual Studio 
 (located on GitHub in vg_automated_microscope/Visual-Studio-2015/camera_vg_take2_newsln/)
+	Edit camera_vg_take2.exe to change the image file type, change the location 
+	that the images are saved to, or change camera settings.
 =================================================================
 STAGE COMMANDS:
 Run the "basic_stage_control" program (python) to send commands directly to the stage. 
